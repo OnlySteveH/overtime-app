@@ -19,5 +19,5 @@ What the app needs to do:
 5. Everything needs to be documented if there is no overtime because of labor laws. There will be 800 employees using this so even if they are salaried they need to know if they had overtime or not. They wanted documentation if ever audited by labor board
 
 ## UI:
-Bootstrap -> formatting
+- Bootstrap -> formatting
 
