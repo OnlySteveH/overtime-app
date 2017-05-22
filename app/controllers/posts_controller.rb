@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  before_action :set_post, only: [:show]
   def index
 
   end
@@ -13,17 +14,28 @@ class PostsController < ApplicationController
 
   def create
     # require is bringing in the post model.
-    # for security reasons, permit is going to whitelist the parameter
-    # to only take in these parameters of :date and :rationale so we
-    # don't allow any SQL Injection.
-    @post = Post.new(params.require(:post).permit(:date, :rationale))
+    @post = Post.new(post_params)
 
-    @post.save
-
-    redirect_to @post
+    if @post.save
+      redirect_to @post, notice: 'Your post was created successfully'
+    else
+      render :new
+    end
   end
 
   def show
+  end
+
+  private
+
+  def post_params
+    # for security reasons, permit is going to whitelist the parameter
+    # to only take in these parameters of :date and :rationale so we
+    # don't allow any SQL Injection.
+    params.require(:post).permit(:date, :rationale)
+  end
+
+  def set_post
     @post = Post.find(params[:id])
   end
 end
