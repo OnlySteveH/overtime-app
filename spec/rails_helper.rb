@@ -8,6 +8,11 @@ require 'spec_helper'
 require 'rspec/rails'
 require 'capybara/rails'
 
+# we need this to mimic signing in
+# Capybara cannot do this for us
+include Warden::Test::Helpers
+Warden.test_mode!
+
 ActiveRecord::Migration.maintain_test_schema!
 
 RSpec.configure do |config|
