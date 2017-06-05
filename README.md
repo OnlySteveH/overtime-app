@@ -4,10 +4,10 @@
 
 So I perceived of having three different models:
 
-- Post -> date:date rationale:text
-x User -> devise
-x AdminUser -> utilize Single Table Inheritance (STI), so its going to be inside the users table but its going to be of type AdminUser.
-x Devise, Administrate gem, Bootstrap for basic styling, Twilio for SMS and for secure credentials .env gem to protect credentials from outside access. Then there is RSpec for testing and Capybara for integration testing.
+- x Post -> date:date rationale:text
+- x User -> devise
+- x AdminUser -> utilize Single Table Inheritance (STI), so its going to be inside the users table but its going to be of type AdminUser.
+- x Devise, Administrate gem, Bootstrap for basic styling, Twilio for SMS and for secure credentials .env gem to protect credentials from outside access. Then there is RSpec for testing and Capybara for integration testing.
 
 ## Features:
 
