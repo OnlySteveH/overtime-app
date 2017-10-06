@@ -1,7 +1,10 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show]
   def index
-
+    # this will just run db query and
+    # store inside posts then make it
+    # available to index action
+    @posts = Post.all
   end
   # the 'new' action does not do anything
   # aside from rendering the new form
