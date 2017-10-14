@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [:show]
+  before_action :set_post, only: [:show, :edit, :update]
   def index
     # this will just run db query and
     # store inside posts then make it
@@ -24,6 +24,18 @@ class PostsController < ApplicationController
       redirect_to @post, notice: 'Your post was created successfully'
     else
       render :new
+    end
+  end
+
+  def edit
+
+  end
+
+  def update
+    if @post.update(post_params)
+      redirect_to @post, notice: 'Your post was created successfully'
+    else
+      render 'edit'
     end
   end
 

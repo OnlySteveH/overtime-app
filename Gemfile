@@ -40,6 +40,7 @@ group :development, :test do
   # It can clean out the database after each turn, no issues with duplicate content
   # in test database
   gem 'database_cleaner'
+  gem 'factory_girl_rails', '~> 4.8'
 end
 
 group :development do
