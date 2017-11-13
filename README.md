@@ -21,7 +21,7 @@ What the app needs to do:
 ## UI:
 - x Bootstrap -> formatting
 - Icons from Font Awesome
-- Update the styles from forms
+- x Update the styles from forms
 
 ## Refactor TODOS:
 - Add full_name method for users
