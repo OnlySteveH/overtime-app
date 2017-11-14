@@ -15,6 +15,7 @@ What the app needs to do:
 - There has to be some type of approval workflow
 - Need to be able to send SMS messages - because these are non-technical field workers so they will not be checking their emails on a regular basis, so we are going to have to send SMS messages which includes a link to essentially log time.
 - Admin dashboard - Administrate gem utilized
+- Block non admin and guest users
 - Email Summary to manager for approval
 - Everything needs to be documented if there is no overtime because of labor laws. There will be 800 employees using this so even if they are salaried they need to know if they had overtime or not. They wanted documentation if ever audited by labor board
 
