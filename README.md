@@ -27,3 +27,4 @@ What the app needs to do:
 ## Refactor TODOS:
 - Add full_name method for users
 - Refactor user association integration test in posts_spec
+- Refactor posts/_form for admin user with status
