@@ -53,7 +53,7 @@ class PostsController < ApplicationController
     # for security reasons, permit is going to whitelist the parameter
     # to only take in these parameters of :date and :rationale so we
     # don't allow any SQL Injection.
-    params.require(:post).permit(:date, :rationale)
+    params.require(:post).permit(:date, :rationale, :status)
   end
 
   def set_post
