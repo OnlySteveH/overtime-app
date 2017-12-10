@@ -26,6 +26,7 @@ What the app needs to do:
 
 ## Refactor TODOS:
 - Add full_name method for users
-- Refactor user association integration test in posts_spec
+- Refactor user association integration test in post_spec
 - Refactor posts/\_form for admin user with status
-- Fix posts_spec.rb:83 to use factories
+- Fix post_spec.rb:83 to use factories
+- Fix post_spec.rb:52 to have correct user reference and not require update
