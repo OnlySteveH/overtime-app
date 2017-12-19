@@ -29,4 +29,4 @@ What the app needs to do:
 - Refactor user association integration test in post_spec
 - Refactor posts/\_form for admin user with status
 - Fix post_spec.rb:83 to use factories
-- Fix post_spec.rb:52 to have correct user reference and not require update
+- Fix post_spec.rb:60 to have correct user reference and not require update

@@ -4,7 +4,7 @@ class PostsController < ApplicationController
     # this will just run db query and
     # store inside posts then make it
     # available to index action
-    @posts = Post.all
+    @posts = current_user.posts
   end
   # the 'new' action does not do anything
   # aside from rendering the new form
@@ -33,7 +33,7 @@ class PostsController < ApplicationController
 
   def update
     authorize @post
-    
+
     if @post.update(post_params)
       redirect_to @post, notice: 'Your post was edited successfully'
     else
